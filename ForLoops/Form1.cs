@@ -20,9 +20,13 @@ namespace ForLoops
         private void runButton_Click(object sender, EventArgs e)
         {
             ///1.  Create a loop that displays all values inclusive between 1-5.
+            /// - iteration value (variable that counts number of times smth is done)
+            /// - control (what determines if for loop should run again)
+            /// - updates iteration value (ex. adds one each time loop happens)
 
             for (int i = 1; i <= 5; i++)
             {
+                q1Output.Text += $"{i}";
                 
             }
 
@@ -30,17 +34,41 @@ namespace ForLoops
             ///2.  Create a loop that displays all values inclusive between 10-6.
 
 
-            ///3.  Create a loop that displays even numbers inclusive between 2 and 10
+            for (int i = 10; i >= 6; i--)
+            {
+                q2Output.Text += $"{i}";
 
+            }
+
+
+            ///3.  Create a loop that displays even numbers inclusive between 2 and 10
+            ///
+
+            for (int i = 2; i <= 10; i =  i + 2)
+            {
+                q3Output.Text += $"{i}";
+
+            }
 
             ///4.  Create a loop that displays the sum of all numbers inclusive 
             ///between 1 and 10. The answers should be 55.
 
+            int sum = 0;
+
+            for (int i = 1; i <= 10; i++)
+            { 
+                sum = sum +i;
+
+                q4Output.Text = $"{sum}";
+            }
 
             ///5. Create a loop that displays all leap years inclusive between 
             ///1990 and 2010. The output should be: 1992 1998 2000 2004 2008
 
-
+            for (int i = 1992; i<=2008; i = i+4)
+            {
+                q5Output.Text += $"\n{i}";
+            }
 
             ///6. Print the following patterns using a loop:
             ///
@@ -52,6 +80,23 @@ namespace ForLoops
             /// 
             /// Hint: Start off with a string that has 1 "*" in it, then 
             /// in the loop you will add another "*" using +=
+            /// 
+
+           
+
+            string star = "*";
+            string delete = "";
+
+            for (int i = 1; i <=5; i++)
+            {
+
+                delete += star;
+                    
+               q6Output.Text += $"\n{delete}";
+            
+             
+            }
+
         }
     }
 }
