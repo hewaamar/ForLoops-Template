@@ -94,7 +94,7 @@ namespace ForLoops
                     
                q6Output.Text += $"\n{delete}";
             
-             
+             //
             }
 
         }
